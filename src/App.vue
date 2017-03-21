@@ -1,23 +1,28 @@
-<template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
-  </div>
+<template lang="pug">
+  div#app
+    menu-bar
+    router-view
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+  import MenuBar from '@/components/MenuBar'
+
+  export default {
+    name: 'app',
+    components: {
+      MenuBar
+    }
+  }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+  body
+    margin: 0
+
+  #app
+    font-family: 'Avenir', Helvetica, Arial, sans-serif
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    text-align: center
+    color: #2c3e50
 </style>
