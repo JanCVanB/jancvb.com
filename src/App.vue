@@ -1,6 +1,7 @@
 <template lang="pug">
   div#app
     menu-bar
+    div.header Jan C. Van Bruggen
     router-view.full-lower-height
 </template>
 
@@ -16,6 +17,10 @@
 </script>
 
 <style lang="sass">
+  @font-face
+    font-family: 'NeoRetroDraw'
+    src: url('assets/fonts/NeoRetroDraw.ttf')
+
   html, body
     height: 100%
     margin: 0
@@ -45,4 +50,17 @@
     margin: 10px 10px 0 10px
     padding: 10px 40px 0 40px
     width: calc(100% - 100px)
+</style>
+
+<style lang="sass" scoped>
+  .header
+    position: absolute
+    left: 0
+    right: 0
+    top: 10px
+    color: #0881db
+    font-family: 'NeoRetroDraw'
+    font-size: 30pt
+    text-align: center
+    pointer-events: none
 </style>
