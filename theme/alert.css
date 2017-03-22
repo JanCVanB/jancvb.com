@@ -72,13 +72,19 @@
   --------------------------*/
     /* Steps
   --------------------------*/
-    /* Steps
+    /* Menu
   --------------------------*/
     /* Rate
   --------------------------*/
     /* DatePicker
   --------------------------*/
     /* Loading
+  --------------------------*/
+    /* Scrollbar
+  --------------------------*/
+    /* Carousel
+  --------------------------*/
+    /* Collapse
   --------------------------*/
 }
 
@@ -108,7 +114,7 @@
 }
 
 .el-alert--info{
-    background-color: #50BFFF;
+    background-color: #50bfff;
 }
 
 .el-alert--warning{
@@ -121,7 +127,7 @@
 
 .el-alert__content{
     display: table-cell;
-    padding-left: 8px;
+    padding: 0 8px;
 }
 
 .el-alert__icon{

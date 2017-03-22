@@ -88,44 +88,48 @@
   --------------------------*/
 }
 
-.el-select-dropdown{}
+.el-carousel{}
 
-.el-select-dropdown__item{
-    font-size: 14px;
-    padding: 8px 10px;
-    position: relative;
-    white-space: nowrap;
+.el-carousel__item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    transition: .4s ease-in-out;
     overflow: hidden;
-    text-overflow: ellipsis;
-    color: rgb(72, 87, 106);
-    height: 36px;
-    line-height: 1.5;
-    box-sizing: border-box;
-    cursor: pointer
+    z-index: 0
 }
 
-.el-select-dropdown__item.hover{
-    background-color: rgb(228, 232, 241)
+.el-carousel__item.is-active{
+    z-index: 2
 }
 
-.el-select-dropdown__item.selected{
-    color: #fff;
-    background-color: #20a0ff
+.el-carousel__item--card{
+    width: 50%
 }
 
-.el-select-dropdown__item.selected.hover{
-    background-color: rgb(28, 141, 224)
+.el-carousel__item--card.is-in-stage{
+    cursor: pointer;
+    z-index: 1
 }
 
-.el-select-dropdown__item span{
-    line-height: 1.5 !important
+.el-carousel__item--card.is-in-stage:hover .el-carousel__mask, .el-carousel__item--card.is-in-stage.is-hover .el-carousel__mask{
+    opacity: 0.12
 }
 
-.el-select-dropdown__item.is-disabled{
-    color: rgb(191, 203, 217);
-    cursor: not-allowed
+.el-carousel__item--card.is-active{
+    z-index: 2
 }
 
-.el-select-dropdown__item.is-disabled:hover{
-    background-color: #fff
+.el-carousel__mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: 0.24;
+    transition: .2s
 }

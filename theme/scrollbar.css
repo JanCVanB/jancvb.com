@@ -88,44 +88,66 @@
   --------------------------*/
 }
 
-.el-select-dropdown{}
-
-.el-select-dropdown__item{
-    font-size: 14px;
-    padding: 8px 10px;
-    position: relative;
-    white-space: nowrap;
+.el-scrollbar{
     overflow: hidden;
-    text-overflow: ellipsis;
-    color: rgb(72, 87, 106);
-    height: 36px;
-    line-height: 1.5;
-    box-sizing: border-box;
-    cursor: pointer
+    position: relative;
 }
 
-.el-select-dropdown__item.hover{
-    background-color: rgb(228, 232, 241)
+.el-scrollbar:hover .el-scrollbar__bar, .el-scrollbar:active .el-scrollbar__bar, .el-scrollbar:focus .el-scrollbar__bar{
+    opacity: 1;
+    transition: opacity 340ms ease-out;
 }
 
-.el-select-dropdown__item.selected{
-    color: #fff;
-    background-color: #20a0ff
+.el-scrollbar__wrap{
+    overflow: scroll;
 }
 
-.el-select-dropdown__item.selected.hover{
-    background-color: rgb(28, 141, 224)
+.el-scrollbar__wrap--hidden-default{}
+
+.el-scrollbar__wrap--hidden-default::-webkit-scrollbar{
+    width: 0;
+    height: 0;
 }
 
-.el-select-dropdown__item span{
-    line-height: 1.5 !important
+.el-scrollbar__thumb{
+    position: relative;
+    display: block;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+    border-radius: inherit;
+    background-color: rgba(151, 168, 190, 0.3);
+    transition: .3s background-color;
 }
 
-.el-select-dropdown__item.is-disabled{
-    color: rgb(191, 203, 217);
-    cursor: not-allowed
+.el-scrollbar__thumb:hover{
+    background-color: rgba(151, 168, 190, 0.5);
 }
 
-.el-select-dropdown__item.is-disabled:hover{
-    background-color: #fff
+.el-scrollbar__bar{
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    z-index: 1;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 120ms ease-out;
+}
+
+.el-scrollbar__bar.is-horizontal{
+    height: 6px;
+    left: 2px;
+}
+
+.el-scrollbar__bar.is-horizontal > div{
+    height: 100%;
+}
+
+.el-scrollbar__bar.is-vertical{
+    width: 6px;
+    top: 2px;
+}
+
+.el-scrollbar__bar.is-vertical > div{
+    width: 100%;
 }
