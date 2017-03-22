@@ -4,6 +4,7 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
     /* Link
   -------------------------- */
     /* Border
@@ -110,11 +111,11 @@
 
 .el-select-dropdown__item.selected{
     color: #fff;
-    background-color: #20a0ff
+    background-color: #0881db
 }
 
 .el-select-dropdown__item.selected.hover{
-    background-color: rgb(28, 141, 224)
+    background-color: rgb(7, 114, 193)
 }
 
 .el-select-dropdown__item span{

@@ -4,6 +4,7 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
     /* Link
   -------------------------- */
     /* Border
@@ -130,6 +131,6 @@
 }
 
 .el-breadcrumb__item__inner:hover, .el-breadcrumb__item__inner a:hover{
-    color: #20a0ff;
+    color: #0881db;
     cursor: pointer
 }

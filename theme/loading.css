@@ -4,6 +4,7 @@
   -------------------------- */
   /* Colors
   -------------------------- */
+  /*--color-primary: #20a0ff;*/
   /* Link
   -------------------------- */
   /* Border
@@ -122,7 +123,7 @@
 }
 
 .el-loading-spinner .el-loading-text{
-  color: #20a0ff;
+  color: #0881db;
   margin: 3px 0;
   font-size: 14px;
 }
@@ -138,7 +139,7 @@
   stroke-dasharray: 90, 150;
   stroke-dashoffset: 0;
   stroke-width: 2;
-  stroke: #20a0ff;
+  stroke: #0881db;
   stroke-linecap: round;
 }
 

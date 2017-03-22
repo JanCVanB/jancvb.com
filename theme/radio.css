@@ -4,6 +4,7 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
     /* Link
   -------------------------- */
     /* Border
@@ -114,12 +115,12 @@
 }
 
 .el-radio__input.is-focus .el-radio__inner{
-    border-color: #20a0ff;
+    border-color: #0881db;
 }
 
 .el-radio__input.is-checked .el-radio__inner{
-    border-color: #20a0ff;
-    background: #20a0ff
+    border-color: #0881db;
+    background: #0881db
 }
 
 .el-radio__input.is-checked .el-radio__inner::after{
@@ -169,7 +170,7 @@
 }
 
 .el-radio__inner:hover{
-    border-color: #20a0ff;
+    border-color: #0881db;
 }
 
 .el-radio__inner::after{
@@ -254,7 +255,7 @@
 }
 
 .el-radio-button__inner:hover{
-    color: #20a0ff;
+    color: #0881db;
 }
 
 .el-radio-button__inner [class*="el-icon-"]{
@@ -277,9 +278,9 @@
 
 .el-radio-button__orig-radio:checked + .el-radio-button__inner{
     color: #fff;
-    background-color: #20a0ff;
-    border-color: #20a0ff;
-    box-shadow: -1px 0 0 0 #20a0ff;
+    background-color: #0881db;
+    border-color: #0881db;
+    box-shadow: -1px 0 0 0 #0881db;
 }
 
 .el-radio-button__orig-radio:disabled{}

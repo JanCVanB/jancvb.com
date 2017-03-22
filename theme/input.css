@@ -4,6 +4,7 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
     /* Link
   -------------------------- */
     /* Border
@@ -116,7 +117,7 @@
 
 .el-input.is-active .el-input__inner{
     outline: none;
-    border-color: #20a0ff;
+    border-color: #0881db;
 }
 
 .el-input__inner{
@@ -157,7 +158,7 @@
 
 .el-input__inner:focus{
     outline: none;
-    border-color: #20a0ff
+    border-color: #0881db
 }
 
 .el-input__icon{
@@ -231,7 +232,7 @@
 }
 
 .el-input-group__append, .el-input-group__prepend{
-    background-color: rgb(251, 253, 255);
+    background-color: rgb(250, 252, 254);
     color: rgb(151, 168, 190);
     vertical-align: middle;
     display: table-cell;
@@ -341,5 +342,5 @@
 
 .el-textarea__inner:focus{
     outline: none;
-    border-color: #20a0ff
+    border-color: #0881db
 }

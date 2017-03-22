@@ -4,6 +4,7 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
     /* Link
   -------------------------- */
     /* Border
@@ -121,7 +122,7 @@
 
 .el-collapse-item__wrap{
     will-change: height;
-    background-color: rgb(251, 253, 255);
+    background-color: rgb(250, 252, 254);
     overflow: hidden;
     box-sizing: border-box;
     border-bottom: 1px solid rgb(223, 230, 236);

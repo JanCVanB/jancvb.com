@@ -5,6 +5,7 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
     /* Link
   -------------------------- */
     /* Border
@@ -111,7 +112,7 @@
 }
 .el-input.is-active .el-input__inner{
     outline: none;
-    border-color: #20a0ff;
+    border-color: #0881db;
 }
 .el-input__inner{
     -webkit-appearance: none;
@@ -146,7 +147,7 @@
 }
 .el-input__inner:focus{
     outline: none;
-    border-color: #20a0ff;
+    border-color: #0881db;
 }
 .el-input__icon{
     position: absolute;
@@ -205,7 +206,7 @@
     display: table-cell;
 }
 .el-input-group__append, .el-input-group__prepend{
-    background-color: rgb(251, 253, 255);
+    background-color: rgb(250, 252, 254);
     color: rgb(151, 168, 190);
     vertical-align: middle;
     display: table-cell;
@@ -297,13 +298,14 @@
 }
 .el-textarea__inner:focus{
     outline: none;
-    border-color: #20a0ff;
+    border-color: #0881db;
 }
 :root{
     /* Transition
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
     /* Link
   -------------------------- */
     /* Border
@@ -503,20 +505,20 @@
 
 .el-cascader-menu__item.selected{
     color: #fff;
-    background-color: #20a0ff;
+    background-color: #0881db;
 }
 
 .el-cascader-menu__item.selected.hover{
-    background-color: rgb(28, 141, 224);
+    background-color: rgb(7, 114, 193);
 }
 
 .el-cascader-menu__item.is-active{
     color: #fff;
-    background-color: #20a0ff;
+    background-color: #0881db;
 }
 
 .el-cascader-menu__item.is-active:hover{
-    background-color: rgb(28, 141, 224);
+    background-color: rgb(7, 114, 193);
 }
 
 .el-cascader-menu__item.is-disabled{

@@ -3,6 +3,7 @@
   -------------------------- */
   /* Colors
   -------------------------- */
+  /*--color-primary: #20a0ff;*/
   /* Link
   -------------------------- */
   /* Border
@@ -92,6 +93,7 @@
   -------------------------- */
   /* Colors
   -------------------------- */
+  /*--color-primary: #20a0ff;*/
   /* Link
   -------------------------- */
   /* Border
@@ -253,6 +255,7 @@
   -------------------------- */
   /* Colors
   -------------------------- */
+  /*--color-primary: #20a0ff;*/
   /* Link
   -------------------------- */
   /* Border
@@ -341,6 +344,7 @@
   -------------------------- */
   /* Colors
   -------------------------- */
+  /*--color-primary: #20a0ff;*/
   /* Link
   -------------------------- */
   /* Border
@@ -468,7 +472,7 @@
 }
 .el-picker-panel__shortcut.active {
   background-color: #e6f1fe;
-  color: #20a0ff;
+  color: #0881db;
 }
 .el-picker-panel__btn {
   border: 1px solid #dcdcdc;
@@ -495,11 +499,11 @@
   margin-top: 3px;
 }
 .el-picker-panel__icon-btn:hover {
-  color: #20a0ff;
+  color: #0881db;
 }
 .el-picker-panel__link-btn {
   cursor: pointer;
-  color: #20a0ff;
+  color: #0881db;
   text-decoration: none;
   padding: 15px;
   font-size: 12px;
@@ -512,7 +516,7 @@
   border-right: 1px solid #e4e4e4;
   box-sizing: border-box;
   padding-top: 6px;
-  background-color: rgb(251, 253, 255);
+  background-color: rgb(250, 252, 254);
 }
 .el-picker-panel *[slot=sidebar] + .el-picker-panel__body, .el-picker-panel__sidebar + .el-picker-panel__body {
   margin-left: 110px;
@@ -562,10 +566,10 @@
   cursor: pointer;
 }
 .el-date-picker__header-label:hover {
-  color: #20a0ff;
+  color: #0881db;
 }
 .el-date-picker__header-label.active {
-  color: #20a0ff;
+  color: #0881db;
 }
 .el-date-picker__prev-btn {
   float: left;
@@ -588,6 +592,7 @@
   -------------------------- */
   /* Colors
   -------------------------- */
+  /*--color-primary: #20a0ff;*/
   /* Link
   -------------------------- */
   /* Border
@@ -677,6 +682,7 @@
   -------------------------- */
   /* Colors
   -------------------------- */
+  /*--color-primary: #20a0ff;*/
   /* Link
   -------------------------- */
   /* Border
@@ -829,12 +835,12 @@
 }
 
 .time-select-item.selected:not(.disabled) {
-  background-color: #20a0ff;
+  background-color: #0881db;
   color: #fff
 }
 
 .time-select-item.selected:not(.disabled):hover {
-  background-color: #20a0ff;
+  background-color: #0881db;
 }
 
 .time-select-item.disabled {

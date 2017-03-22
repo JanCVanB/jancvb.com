@@ -6,6 +6,8 @@
     /* Colors
   -------------------------- */
 
+    /*--color-primary: #20a0ff;*/
+
     /* Link
   -------------------------- */
 
@@ -409,16 +411,16 @@
 
 .el-color-dropdown__btn:hover {
 
-    color: #20a0ff;
+    color: #0881db;
 
-    border-color: #20a0ff;
+    border-color: #0881db;
 }
 
 .el-color-dropdown__link-btn {
 
     cursor: pointer;
 
-    color: #20a0ff;
+    color: #0881db;
 
     text-decoration: none;
 
@@ -429,7 +431,7 @@
 
 .el-color-dropdown__link-btn:hover {
 
-    color: rgb(77, 179, 255);
+    color: rgb(57, 154, 226);
 }
 
 .el-color-picker {

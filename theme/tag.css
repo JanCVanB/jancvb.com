@@ -4,6 +4,7 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
     /* Link
   -------------------------- */
     /* Border
@@ -138,18 +139,18 @@
 }
 
 .el-tag--primary{
-    background-color: rgba(32, 160, 255, 0.1);
-    border-color: rgba(32, 160, 255, 0.2);
-    color: #20a0ff
+    background-color: rgba(8, 129, 219, 0.1);
+    border-color: rgba(8, 129, 219, 0.2);
+    color: #0881db
 }
 
 .el-tag--primary .el-tag__close:hover{
-    background-color: #20a0ff;
+    background-color: #0881db;
     color: #fff
 }
 
 .el-tag--primary.is-hit{
-    border-color: #20a0ff
+    border-color: #0881db
 }
 
 .el-tag--success{

@@ -478,6 +478,7 @@ h1, h2, h3, h4, h5, h6 {
   -------------------------- */
   /* Colors
   -------------------------- */
+  /*--color-primary: #20a0ff;*/
   /* Link
   -------------------------- */
   /* Border
@@ -569,16 +570,16 @@ body {
 }
 
 a {
-  color: #20a0ff;
+  color: #0881db;
   text-decoration: none
 }
 
 a:hover, a:focus {
-  color: rgb(77, 179, 255);
+  color: rgb(57, 154, 226);
 }
 
 a:active {
-  color: rgb(29, 144, 230);
+  color: rgb(7, 116, 197);
 }
 
 h1, h2, h3, h4, h5, h6 {

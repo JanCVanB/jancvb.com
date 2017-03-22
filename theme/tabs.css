@@ -4,6 +4,7 @@
   -------------------------- */
   /* Colors
   -------------------------- */
+  /*--color-primary: #20a0ff;*/
   /* Link
   -------------------------- */
   /* Border
@@ -102,7 +103,7 @@
   bottom: 0;
   left: 0;
   height: 3px;
-  background-color: #20a0ff;
+  background-color: #0881db;
   z-index: 1;
   transition: transform .3s cubic-bezier(.645,.045,.355,1);
   list-style: none;
@@ -128,7 +129,7 @@
 }
 
 .el-tabs__new-tab:hover{
-  color: #20a0ff;
+  color: #0881db;
 }
 
 .el-tabs__nav-wrap{
@@ -208,7 +209,7 @@
 }
 
 .el-tabs__item.is-active{
-  color: #20a0ff;
+  color: #0881db;
 }
 
 .el-tabs__content{

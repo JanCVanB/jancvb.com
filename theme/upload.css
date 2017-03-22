@@ -22,6 +22,7 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
     /* Link
   -------------------------- */
     /* Border
@@ -183,7 +184,7 @@
     top: 0;
     height: 100%;
     border-radius: 2px 0 0 2px;
-    background-color: #20a0ff;
+    background-color: #0881db;
     text-align: right;
     border-radius: 100px;
     line-height: 1;
@@ -208,6 +209,7 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
     /* Link
   -------------------------- */
     /* Border
@@ -336,8 +338,8 @@
 }
 
 .el-upload--picture-card:hover{
-    border-color: #20a0ff;
-    color: #20a0ff;
+    border-color: #0881db;
+    color: #0881db;
 }
 
 .el-upload-dragger{
@@ -360,7 +362,7 @@
 }
 
 .el-upload-dragger .el-upload__text em{
-    color: #20a0ff;
+    color: #0881db;
     font-style: normal;
 }
 
@@ -382,12 +384,12 @@
 }
 
 .el-upload-dragger:hover{
-    border-color: #20a0ff;
+    border-color: #0881db;
 }
 
 .el-upload-dragger.is-dragover{
     background-color: rgba(32, 159, 255, .06);
-    border: 2px dashed #20a0ff;
+    border: 2px dashed #0881db;
 }
 
 .el-upload-list{
@@ -436,7 +438,7 @@
 }
 
 .el-upload-list__item.is-success .el-upload-list__item-name:hover{
-    color: #20a0ff;
+    color: #0881db;
     cursor: pointer;
 }
 
@@ -496,7 +498,7 @@
 }
 
 .el-upload-list__item-delete:hover{
-    color: #20a0ff;
+    color: #0881db;
 }
 
 .el-upload-list--picture-card{

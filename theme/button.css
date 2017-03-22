@@ -4,6 +4,7 @@
   -------------------------- */
     /* Colors
   -------------------------- */
+    /*--color-primary: #20a0ff;*/
     /* Link
   -------------------------- */
     /* Border
@@ -114,13 +115,13 @@
 }
 
 .el-button:hover, .el-button:focus{
-    color: #20a0ff;
-    border-color: #20a0ff;
+    color: #0881db;
+    border-color: #0881db;
 }
 
 .el-button:active{
-    color: rgb(29, 144, 230);
-    border-color: rgb(29, 144, 230);
+    color: rgb(7, 116, 197);
+    border-color: rgb(7, 116, 197);
     outline: none;
 }
 
@@ -174,47 +175,47 @@
 }
 
 .el-button.is-active{
-    color: rgb(29, 144, 230);
-    border-color: rgb(29, 144, 230);
+    color: rgb(7, 116, 197);
+    border-color: rgb(7, 116, 197);
 }
 
 .el-button.is-plain{}
 
 .el-button.is-plain:hover, .el-button.is-plain:focus{
     background: #fff;
-    border-color: #20a0ff;
-    color: #20a0ff;
+    border-color: #0881db;
+    color: #0881db;
 }
 
 .el-button.is-plain:active{
     background: #fff;
-    border-color: rgb(29, 144, 230);
-    color: rgb(29, 144, 230);
+    border-color: rgb(7, 116, 197);
+    color: rgb(7, 116, 197);
     outline: none;
 }
 
 .el-button--primary{
     color: #fff;
-    background-color: #20a0ff;
-    border-color: #20a0ff;
+    background-color: #0881db;
+    border-color: #0881db;
 }
 
 .el-button--primary:hover, .el-button--primary:focus{
-    background: rgb(77, 179, 255);
-    border-color: rgb(77, 179, 255);
+    background: rgb(57, 154, 226);
+    border-color: rgb(57, 154, 226);
     color: #fff;
 }
 
 .el-button--primary:active{
-    background: rgb(29, 144, 230);
-    border-color: rgb(29, 144, 230);
+    background: rgb(7, 116, 197);
+    border-color: rgb(7, 116, 197);
     color: #fff;
     outline: none;
 }
 
 .el-button--primary.is-active{
-    background: rgb(29, 144, 230);
-    border-color: rgb(29, 144, 230);
+    background: rgb(7, 116, 197);
+    border-color: rgb(7, 116, 197);
     color: #fff;
 }
 
@@ -226,14 +227,14 @@
 
 .el-button--primary.is-plain:hover, .el-button--primary.is-plain:focus{
     background: #fff;
-    border-color: #20a0ff;
-    color: #20a0ff;
+    border-color: #0881db;
+    color: #0881db;
 }
 
 .el-button--primary.is-plain:active{
     background: #fff;
-    border-color: rgb(29, 144, 230);
-    color: rgb(29, 144, 230);
+    border-color: rgb(7, 116, 197);
+    color: rgb(7, 116, 197);
     outline: none;
 }
 
@@ -433,18 +434,18 @@
 
 .el-button--text{
     border: none;
-    color: #20a0ff;
+    color: #0881db;
     background: transparent;
     padding-left: 0;
     padding-right: 0;
 }
 
 .el-button--text:hover, .el-button--text:focus{
-    color: rgb(77, 179, 255);
+    color: rgb(57, 154, 226);
 }
 
 .el-button--text:active{
-    color: rgb(29, 144, 230);
+    color: rgb(7, 116, 197);
 }
 
 .el-button-group{
