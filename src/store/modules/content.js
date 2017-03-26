@@ -4,10 +4,40 @@ import interests from '../../content/interests'
 import projects from '../../content/projects'
 import * as getterNames from '../getterNames'
 
+const completeBlogs = _.mapObject(blogs, blog => {
+  const doFlattenProjectInterestsShallowly = true
+  const projectInterests = _.flatten(
+    blog.projects.map(projectId => projects[projectId].interests),
+    doFlattenProjectInterestsShallowly
+  )
+  const allInterests = _.uniq(blog.interests.concat(projectInterests))
+  return { ...blog, interests: allInterests }
+})
+
+const completeProjects = _.mapObject(projects, project => {
+  const blogs = _.filter(
+    _.keys(completeBlogs),
+    blogId => _.contains(completeBlogs[blogId].projects, project.id)
+  )
+  return { ...project, blogs }
+})
+
+const completeInterests = _.mapObject(interests, interest => {
+  const blogs = _.filter(
+    _.keys(completeBlogs),
+    blogId => _.contains(completeBlogs[blogId].interests, interest.id)
+  )
+  const projects = _.filter(
+    _.keys(completeProjects),
+    projectId => _.contains(completeProjects[projectId].interests, interest.id)
+  )
+  return { ...interest, blogs, projects }
+})
+
 const state = {
-  blogs,
-  interests,
-  projects
+  blogs: completeBlogs,
+  interests: completeInterests,
+  projects: completeProjects
 }
 
 const getters = {
