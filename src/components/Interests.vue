@@ -3,6 +3,7 @@
     selector(
       v-bind:value='selectedInterestId'
       v-bind:options='sortedInterests'
+      urlPrefix='/interest/'
       v-on:input='handleUserSelectInterestId'
     )
     interestViewer(v-bind:interest='selectedInterest')
@@ -31,7 +32,12 @@
       },
       selectedInterestId () {
         if (this.userSelectedInterestId === null) {
-          return this.sortedInterests[0].id
+          const routeInterestId = this.$route.params.id
+          if (routeInterestId) {
+            return routeInterestId
+          } else {
+            return this.sortedInterests[0].id
+          }
         } else {
           return this.userSelectedInterestId
         }

@@ -3,6 +3,7 @@
     selector(
       v-bind:value='selectedProjectId'
       v-bind:options='sortedProjects'
+      urlPrefix='/project/'
       v-on:input='handleUserSelectProjectId'
     )
     projectViewer(v-bind:project='selectedProject')
@@ -31,7 +32,12 @@
       },
       selectedProjectId () {
         if (this.userSelectedProjectId === null) {
-          return this.sortedProjects[0].id
+          const routeProjectId = this.$route.params.id
+          if (routeProjectId) {
+            return routeProjectId
+          } else {
+            return this.sortedProjects[0].id
+          }
         } else {
           return this.userSelectedProjectId
         }

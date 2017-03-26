@@ -4,32 +4,46 @@ import Blogs from '@/components/Blogs'
 import Interests from '@/components/Interests'
 import Me from '@/components/Me'
 import Projects from '@/components/Projects'
-import { blogsPath, interestsPath, mePath, projectsPath } from '@/constants'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: blogsPath,
+      path: '/blog',
       name: 'Blogs',
       component: Blogs
     },
     {
-      path: interestsPath,
+      path: '/blog/:id',
+      name: 'Blog',
+      component: Blogs
+    },
+    {
+      path: '/interest',
       name: 'Interests',
       component: Interests
     },
     {
-      path: mePath,
+      path: '/interest/:id',
+      name: 'Interest',
+      component: Interests
+    },
+    {
+      path: '/me',
       name: 'Me',
       component: Me
     },
     {
-      path: projectsPath,
+      path: '/project',
       name: 'Projects',
       component: Projects,
       alias: '/'
+    },
+    {
+      path: '/project/:id',
+      name: 'Project',
+      component: Projects
     },
     {
       path: '*',

@@ -1,11 +1,12 @@
 <template lang="pug">
   el-menu.selector(
-    v-bind:default-active='value'
+    v-bind:default-active='urlPrefix + value'
+    v-bind:router='true'
     v-on:select='handleSelect'
   )
     el-menu-item(
       v-for='option in options'
-      v-bind:index='option.id'
+      v-bind:index='urlPrefix + option.id'
       v-bind:key='option.id'
     )
       i(v-if='iconClass' v-bind:class='iconClass')
@@ -24,13 +25,18 @@
         required: true,
         type: Array
       },
+      urlPrefix: {
+        required: true,
+        type: String
+      },
       value: {
         required: true,
         type: String
       }
     },
     methods: {
-      handleSelect (optionId) {
+      handleSelect (optionUrl) {
+        const optionId = optionUrl.slice(this.urlPrefix.length)
         this.$emit('input', optionId)
       }
     }

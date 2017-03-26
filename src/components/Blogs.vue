@@ -3,6 +3,7 @@
     selector(
       v-bind:value='selectedBlogId'
       v-bind:options='sortedBlogs'
+      urlPrefix='/blog/'
       v-on:input='handleUserSelectBlogId'
     )
     blogViewer(v-bind:blog='selectedBlog')
@@ -31,7 +32,12 @@
       },
       selectedBlogId () {
         if (this.userSelectedBlogId === null) {
-          return this.sortedBlogs[0].id
+          const routeBlogId = this.$route.params.id
+          if (routeBlogId) {
+            return routeBlogId
+          } else {
+            return this.sortedBlogs[0].id
+          }
         } else {
           return this.userSelectedBlogId
         }

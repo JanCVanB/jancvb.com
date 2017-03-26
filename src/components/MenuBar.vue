@@ -4,24 +4,20 @@
     mode='horizontal'
     v-bind:router='true'
   )
-    el-menu-item(v-bind:index='projectsPath') Projects
-    el-menu-item(v-bind:index='interestsPath') Interests
-    el-menu-item(v-bind:index='blogsPath') Blogs
-    el-menu-item(v-bind:index='mePath') Me
+    el-menu-item(index='/project') Projects
+    el-menu-item(index='/interest') Interests
+    el-menu-item(index='/blog') Blogs
+    el-menu-item(index='/me') Me
 </template>
 
 <script>
-  import { blogsPath, interestsPath, mePath, projectsPath } from '@/constants'
-
   export default {
     name: 'menu-bar',
     data () {
+      const currentRoutePathSteps = this.$router.currentRoute.path.split('/')
+      const currentRoutePathShallow = '/' + currentRoutePathSteps[1]
       return {
-        activePath: projectsPath,
-        blogsPath: blogsPath,
-        interestsPath: interestsPath,
-        mePath: mePath,
-        projectsPath: projectsPath
+        activePath: currentRoutePathShallow
       }
     }
   }
