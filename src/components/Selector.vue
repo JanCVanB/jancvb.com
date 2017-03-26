@@ -48,9 +48,5 @@
     display: inline-block
     height: 100%
     overflow: scroll
-    width: 320px
-
-  @media (max-width: 1130px)
-    .selector
-      width: 200px
+    width: 200px
 </style>

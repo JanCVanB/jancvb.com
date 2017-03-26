@@ -35,6 +35,10 @@
     height: 100%
     position: relative
 
+  #app .me .timeline-Viewport
+    height: calc(100% - 104px)
+    overflow-y: scroll
+
   .full-lower-height
     height: calc(100% - 60px)
 
@@ -42,12 +46,12 @@
     display: inline-block
     height: 100%
     vertical-align: top
-    width: calc(100% - 640px)
+    width: calc(100% - 400px)
 
   .viewer-inner
     background-color: #ffffff
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-    height: calc(90% - 80px)
+    height: calc(100% - 100px)
     margin: 10px
     overflow-y: scroll
     padding: 30px 40px
@@ -55,10 +59,6 @@
 
   .viewer-inner h1
     margin-top: 0
-
-  @media (max-width: 1130px)
-    .viewer
-      width: calc(100% - 400px)
 </style>
 
 <style lang="sass" scoped>
