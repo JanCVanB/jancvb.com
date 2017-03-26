@@ -1,0 +1,17 @@
+{
+  "wo": {
+    "dateModified": "2",
+    "id": "wo",
+    "name": "Working with professors"
+  },
+  "de": {
+    "dateModified": "1",
+    "id": "de",
+    "name": "Designing a satellite trajectory tool"
+  },
+  "sp": {
+    "dateModified": "3",
+    "id": "sp",
+    "name": "Spring 2017 Jump update"
+  }
+}

@@ -1,47 +1,45 @@
 <template lang="pug">
   div.full-height
     selector(
-      v-model='selectedInterestId'
+      v-bind:value='selectedInterestId'
       v-bind:options='sortedInterests'
+      v-on:input='handleUserSelectInterestId'
     )
     interestViewer(v-bind:interest='selectedInterest')
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+  import * as getterNames from '../store/getterNames'
   import InterestViewer from '@/components/InterestViewer'
   import Selector from '@/components/Selector'
-
-  const interests = {
-    ed: {
-      id: 'ed',
-      name: 'Education'
-    },
-    si: {
-      id: 'si',
-      name: 'Simulations'
-    },
-    mu: {
-      id: 'mu',
-      name: 'Music'
-    }
-  }
-  const sortedInterestIds = ['ed', 'si', 'mu']
 
   export default {
     name: 'interests',
     data () {
       return {
-        interests,
-        selectedInterestId: sortedInterestIds[0],
-        sortedInterestIds
+        userSelectedInterestId: null
       }
     },
     computed: {
-      sortedInterests () {
-        return this.sortedInterestIds.map(id => this.interests[id])
-      },
+      ...mapGetters([
+        getterNames.interests,
+        getterNames.sortedInterests
+      ]),
       selectedInterest () {
         return this.interests[this.selectedInterestId]
+      },
+      selectedInterestId () {
+        if (this.userSelectedInterestId === null) {
+          return this.sortedInterests[0].id
+        } else {
+          return this.userSelectedInterestId
+        }
+      }
+    },
+    methods: {
+      handleUserSelectInterestId (interestId) {
+        this.userSelectedInterestId = interestId
       }
     },
     components: {

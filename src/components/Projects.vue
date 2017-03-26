@@ -1,47 +1,45 @@
 <template lang="pug">
   div.full-height
     selector(
-      v-model='selectedProjectId'
+      v-bind:value='selectedProjectId'
       v-bind:options='sortedProjects'
+      v-on:input='handleUserSelectProjectId'
     )
     projectViewer(v-bind:project='selectedProject')
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+  import * as getterNames from '../store/getterNames'
   import ProjectViewer from '@/components/ProjectViewer'
   import Selector from '@/components/Selector'
-
-  const projects = {
-    ju: {
-      id: 'ju',
-      name: 'Jump'
-    },
-    ts: {
-      id: 'ts',
-      name: 'Trapezoid Suite'
-    },
-    ep: {
-      id: 'ep',
-      name: 'EncycloPDF'
-    }
-  }
-  const sortedProjectIds = ['ju', 'ts', 'ep']
 
   export default {
     name: 'projects',
     data () {
       return {
-        projects,
-        selectedProjectId: sortedProjectIds[0],
-        sortedProjectIds
+        userSelectedProjectId: null
       }
     },
     computed: {
+      ...mapGetters([
+        getterNames.projects,
+        getterNames.sortedProjects
+      ]),
       selectedProject () {
         return this.projects[this.selectedProjectId]
       },
-      sortedProjects () {
-        return this.sortedProjectIds.map(id => this.projects[id])
+      selectedProjectId () {
+        if (this.userSelectedProjectId === null) {
+          return this.sortedProjects[0].id
+        } else {
+          return this.userSelectedProjectId
+        }
+      }
+    },
+    methods: {
+      handleUserSelectProjectId (projectId) {
+        this.userSelectedProjectId = projectId
       }
     },
     components: {

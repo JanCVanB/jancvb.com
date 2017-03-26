@@ -1,47 +1,45 @@
 <template lang="pug">
   div.full-height
     selector(
-      v-model='selectedBlogId'
+      v-bind:value='selectedBlogId'
       v-bind:options='sortedBlogs'
+      v-on:input='handleUserSelectBlogId'
     )
     blogViewer(v-bind:blog='selectedBlog')
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+  import * as getterNames from '../store/getterNames'
   import BlogViewer from '@/components/BlogViewer'
   import Selector from '@/components/Selector'
-
-  const blogs = {
-    a: {
-      id: 'a',
-      name: 'A'
-    },
-    b: {
-      id: 'b',
-      name: 'B'
-    },
-    c: {
-      id: 'c',
-      name: 'C'
-    }
-  }
-  const sortedBlogIds = ['a', 'b', 'c']
 
   export default {
     name: 'blogs',
     data () {
       return {
-        blogs,
-        selectedBlogId: sortedBlogIds[0],
-        sortedBlogIds
+        userSelectedBlogId: null
       }
     },
     computed: {
-      sortedBlogs () {
-        return this.sortedBlogIds.map(id => this.blogs[id])
-      },
+      ...mapGetters([
+        getterNames.blogs,
+        getterNames.sortedBlogs
+      ]),
       selectedBlog () {
         return this.blogs[this.selectedBlogId]
+      },
+      selectedBlogId () {
+        if (this.userSelectedBlogId === null) {
+          return this.sortedBlogs[0].id
+        } else {
+          return this.userSelectedBlogId
+        }
+      }
+    },
+    methods: {
+      handleUserSelectBlogId (blogId) {
+        this.userSelectedBlogId = blogId
       }
     },
     components: {
