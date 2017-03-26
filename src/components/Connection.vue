@@ -13,10 +13,6 @@
   export default {
     name: 'connection',
     props: {
-      id: {
-        required: true,
-        type: String
-      },
       isBlog: {
         default: false,
         type: Boolean
@@ -57,9 +53,4 @@
 </script>
 
 <style lang="sass" scoped>
-  .connection
-    display: inline-block
-    cursor: pointer
-    margin-right: 10px
-    transition: all 1s
 </style>

@@ -1,15 +1,17 @@
 <template lang="pug">
   transition-group.connections(name='connections' tag='div')
     span.label(v-bind:class='{ empty: !ids.length }' key='label') {{ label }}
-    connection(
+    router-link(
       v-for='id in ids'
       v-bind:key='id'
-      v-bind:id='id'
-      v-bind:isBlog='isBlogs'
-      v-bind:isInterest='isInterests'
-      v-bind:isProject='isProjects'
-      v-bind:name='lookup[id].name'
+      v-bind:to='urlPrefix + id'
     )
+      connection(
+        v-bind:isBlog='isBlogs'
+        v-bind:isInterest='isInterests'
+        v-bind:isProject='isProjects'
+        v-bind:name='lookup[id].name'
+      )
 </template>
 
 <script>
@@ -51,6 +53,18 @@
           return 'Related projects'
         }
         return ''
+      },
+      urlPrefix () {
+        if (this.isBlogs) {
+          return '/blog'
+        }
+        if (this.isInterests) {
+          return '/interest'
+        }
+        if (this.isProjects) {
+          return '/project'
+        }
+        return '/error'
       }
     },
     components: {
@@ -63,6 +77,11 @@
   .connections
     height: 24px
     margin-bottom: 10px
+
+  .connections a
+    display: inline-block
+    margin-right: 10px
+    transition: all 1s
 
   .connections-enter
     opacity: 0

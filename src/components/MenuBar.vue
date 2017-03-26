@@ -15,7 +15,11 @@
     name: 'menu-bar',
     data () {
       const currentRoutePathSteps = this.$router.currentRoute.path.split('/')
-      const currentRoutePathShallow = '/' + currentRoutePathSteps[1]
+      const currentRoutePathShallow = (
+        currentRoutePathSteps[1]
+        ? '/' + currentRoutePathSteps[1]
+        : '/project'
+      )
       return {
         activePath: currentRoutePathShallow
       }
