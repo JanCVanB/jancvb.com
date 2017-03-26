@@ -2,19 +2,22 @@
   div.viewer
     div.viewer-inner
       h1 {{ project.name }}
-      h3 Interests
-      ul
-        li(v-for='interestId in project.interests')
-          | {{ interests[interestId].name }}
-      h3 Blogs
-      ul
-        li(v-for='blogId in project.blogs')
-          | {{ blogs[blogId].name }}
+      connections(
+        v-bind:ids='project.interests'
+        v-bind:isInterests='true'
+        v-bind:lookup='interests'
+      )
+      connections(
+        v-bind:ids='project.blogs'
+        v-bind:isBlogs='true'
+        v-bind:lookup='blogs'
+      )
 </template>
 
 <script>
   import { mapGetters } from 'vuex'
   import * as getterNames from '../store/getterNames'
+  import Connections from './Connections'
 
   export default {
     name: 'project-viewer',
@@ -29,6 +32,9 @@
         getterNames.blogs,
         getterNames.interests
       ])
+    },
+    components: {
+      Connections
     }
   }
 </script>
