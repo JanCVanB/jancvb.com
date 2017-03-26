@@ -22,6 +22,7 @@
     src: url('assets/fonts/NeoRetroDraw.ttf')
 
   html, body
+    background-color: #eff2f7
     height: 100%
     margin: 0
 
@@ -46,10 +47,18 @@
   .viewer-inner
     background-color: #ffffff
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-    height: 90%
-    margin: 10px 10px 0 10px
-    padding: 10px 40px 0 40px
+    height: calc(90% - 80px)
+    margin: 10px
+    overflow-y: scroll
+    padding: 30px 40px
     width: calc(100% - 100px)
+
+  .viewer-inner h1
+    margin-top: 0
+
+  @media (max-width: 1130px)
+    .viewer
+      width: calc(100% - 400px)
 </style>
 
 <style lang="sass" scoped>

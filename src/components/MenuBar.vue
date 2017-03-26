@@ -26,4 +26,8 @@
 <style lang="sass" scoped>
   .menu-bar
     text-align: center
+
+  @media (max-width: 1130px)
+    .menu-bar
+      padding-top: 60px
 </style>
