@@ -1,1 +1,6 @@
-export const helloWorld = 'helloWorld'
+export const blogs = 'blogs'
+export const interests = 'interests'
+export const projects = 'projects'
+export const sortedBlogs = 'sortedBlogs'
+export const sortedInterests = 'sortedInterests'
+export const sortedProjects = 'sortedProjects'

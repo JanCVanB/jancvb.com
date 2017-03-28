@@ -9,6 +9,7 @@
   -------------------------- */
   /* Colors
   -------------------------- */
+  /*--color-primary: #20a0ff;*/
   /* Link
   -------------------------- */
   /* Border
@@ -77,13 +78,19 @@
   --------------------------*/
   /* Steps
   --------------------------*/
-  /* Steps
+  /* Menu
   --------------------------*/
   /* Rate
   --------------------------*/
   /* DatePicker
   --------------------------*/
   /* Loading
+  --------------------------*/
+  /* Scrollbar
+  --------------------------*/
+  /* Carousel
+  --------------------------*/
+  /* Collapse
   --------------------------*/
 }
 
@@ -110,7 +117,7 @@
 
 .el-progress__text{
   font-size:14px;
-  color:#475669;
+  color:rgb(72, 87, 106);
   display: inline-block;
   vertical-align: middle;
   margin-left: 10px;
@@ -168,7 +175,7 @@
 .el-progress-bar__outer{
   height: 6px;
   border-radius: 100px;
-  background-color: #e5e9f2;
+  background-color:rgb(228, 232, 241);
   overflow: hidden;
   position: relative;
   vertical-align: middle;
@@ -180,7 +187,7 @@
   top: 0;
   height: 100%;
   border-radius: 2px 0 0 2px;
-  background-color:#20a0ff;
+  background-color:#0881db;
   text-align: right;
   border-radius: 100px;
   line-height: 1;
@@ -189,7 +196,7 @@
 .el-progress-bar__innerText{
   display: inline-block;
   vertical-align: middle;
-  color: #fff;
+  color:#fff;
   font-size: 12px;
   margin: 0 5px;
 }

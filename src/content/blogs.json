@@ -1,0 +1,34 @@
+{
+  "wo": {
+    "dateModified": "2",
+    "id": "wo",
+    "interests": [
+      "ed"
+    ],
+    "name": "Working with professors",
+    "projects": [
+      "ep"
+    ]
+  },
+  "de": {
+    "dateModified": "1",
+    "id": "de",
+    "interests": [
+    ],
+    "name": "Designing a satellite trajectory tool",
+    "projects": [
+      "ts"
+    ]
+  },
+  "sp": {
+    "dateModified": "3",
+    "id": "sp",
+    "interests": [
+      "mu"
+    ],
+    "name": "Spring 2017 Jump update",
+    "projects": [
+      "ju"
+    ]
+  }
+}

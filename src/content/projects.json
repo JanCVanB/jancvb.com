@@ -1,0 +1,26 @@
+{
+  "ju": {
+    "dateModified": "2",
+    "id": "ju",
+    "interests": [
+      "ed"
+    ],
+    "name": "Jump"
+  },
+  "ts": {
+    "dateModified": "1",
+    "id": "ts",
+    "interests": [
+      "si"
+    ],
+    "name": "Trapezoid Suite"
+  },
+  "ep": {
+    "dateModified": "3",
+    "id": "ep",
+    "interests": [
+      "ed"
+    ],
+    "name": "EncycloPDF"
+  }
+}
